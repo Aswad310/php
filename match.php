@@ -5,7 +5,8 @@
     $return_name = match($name){
         'Aswad Ali' => 'aswad',
         'Ahmed' => 'ahmed',
-        'ALi' => 'ali',
+        'Ali' => 'ali',
+        default => 'wrong name',
     };
 
     echo $return_name;
