@@ -1,5 +1,4 @@
 <?php
-
 ############ goto  ############
     // without Break
     echo "without Break<br>";
@@ -7,10 +6,10 @@
         echo $i.'<br>';
     }
 
-    // comes to know that Break is deprecated 
+    // Break is deprecated 
     // goto is used instead of break
 
-    // with 'goto'
+    // goto
     echo "<br>";
     echo "with goto<br>";
     for ($i=0; $i<= 10; $i++) { 
@@ -22,8 +21,7 @@
     end:
     echo "I am out of for Loop";
 
-
-############ Continue  ############
+############ continue  ############
     echo '<hr>Continue<br>';
     $x=0;
     for ($i = 0; $i < 5; $i++) {

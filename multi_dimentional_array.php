@@ -26,14 +26,6 @@
         }
     }
 
-    // foreach ($lang as $lan) {
-    //     foreach ($lan as $key_relation => $val) {
-    //         echo "{$val}";
-    //         echo "<br>";
-    //     }
-    //     echo "<br>";
-    // }
-
     echo '<pre><hr>';
     print_r($lang['PHP']);
     echo '</pre> <hr/>';

@@ -1,9 +1,8 @@
 <?php
-
     $x = 10;
     $y = 20;
 
-    // Heredoc 
+############ Heredoc  ############
     $test = <<<TEXT
     Line 1 $x    
     Line 2 $y    
@@ -13,8 +12,8 @@
     echo nl2br($test);
 
     echo '<hr>';
-    
-    // Nowdoc
+
+############ Nowdoc  ############
     $test = <<<'TEXT'
     Line 1 $x    
     Line 2 $y    
@@ -22,5 +21,4 @@
     TEXT;
 
     echo nl2br($test);
-
 ?>
