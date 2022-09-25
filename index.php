@@ -4,37 +4,19 @@ include('includes/User.inc.php');
 include('includes/ViewUser.inc.php');
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PL | Training</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="purelogics-logo.jpeg">
-</head>
-
-<body>
-
-    <h2 style="text-align: center;">Aswad Ali - <span style="color: #14f595;">PureLogics</span> </h2>
-
-    <?php
-        // string position
-        $name = "Aswad Ali";
-        $y= strpos($name , 's');
-
-        // Operators
-        $res = $y===false ? 's not found0' : 's found at index ['.$y.']<hr>';
-        echo $res;   
-        
-        // Null coalescing
-        $i = NULL;
-        $j = $i ?? 'hello';
-        echo $j;
-       
-    ?>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo $title ?? 'PL | Training'?></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <div class="">
+            <img src="purelogics-logo.jpeg" alt="PL-Logo" style="width: 70px;">
+        </div>
+    </body>
 </html>
