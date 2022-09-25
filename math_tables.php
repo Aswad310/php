@@ -1,5 +1,5 @@
 <?php    
-    $title="Math | Tables"; 
+    $title="Math - Tables"; 
     include('index.php');
 ?>
 
@@ -10,7 +10,7 @@
     }
 </style>
 
-<table class="table table-dark table-striped ">
+<table class="table table-dark table-striped">
     <?php
         for($num=1 ; $num<=10 ; $num++){
             ?>
