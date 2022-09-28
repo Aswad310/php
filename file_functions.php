@@ -17,14 +17,13 @@ $dir = scandir(__DIR__);
     echo '<hr />';
 
 ############ mkdir() ############
-    // mkdir('foo');
-
-    // /* MAKE Recursive Folder */   clearstatcache();
+    mkdir('foo');
+    
 ############ rmdir() ############
-    // rmdir('foo');
+    rmdir('foo');
 
-    // /* REMOVE Recursive Folder */
-    // mkdir('foo/bar');
+    /* REMOVE Recursive Folder */
+    mkdir('foo/bar');
 
 ############ file_exists() ############
     if(file_exists('hello.txt')){
@@ -34,11 +33,11 @@ $dir = scandir(__DIR__);
     }  
 
 ############ file_put_contents() & clearstatcache() ############
-// if(file_exists('hello.txt')){
-//     echo filesize('hello.txt');
-//     file_put_contents('hello.txt', 'Hello PHP World!');
-//     clearstatcache();
-// } else{
-//     echo "File Not Found! <hr />";
-// }  
+if(file_exists('hello.txt')){
+    echo filesize('hello.txt');
+    file_put_contents('hello.txt', 'Hello PHP World!');
+    clearstatcache();
+} else{
+    echo "File Not Found! <hr />";
+}  
 ?>
