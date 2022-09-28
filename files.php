@@ -35,4 +35,12 @@
 
 ############ copy() ############
     copy('hello.txt','del.txt');
+
+############ copy() ############
+    rename('del.txt','hello2.txt');
+
+############ pathinfo() ############
+    echo '<pre>';
+        print_r(pathinfo('./hello.txt'));
+    echo '<pre>';
 ?>
